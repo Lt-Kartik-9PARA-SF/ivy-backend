@@ -74,8 +74,9 @@ app.post('/register',async (req,resp)=>{
 })
  
 app.get('/',async (req,resp)=>{
-    let user = await User.find();
-    resp.send(user);
+   
+    resp.send("working");
+    resp.end();
 })
 
 app.post('/curUser',async (req,resp)=>{
